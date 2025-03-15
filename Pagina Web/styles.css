@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    /* Configura la fuente general de la página */
+    font-family: 'Courier New', monospace;
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+    /* Fondo con un degradado diagonal */
+    background: linear-gradient(135deg, #e0e0e0, #b0bec5);
+    color: #212121; /* Color del texto general */
+}
+
+/* Contenedor principal */
+.container {
+    /* Define un diseño de cuadrícula con 2 columnas: 1 pequeña (30%) y 1 grande (70%) */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Limita el ancho máximo del contenedor */
+    max-width: 960px;
+    margin: 30px auto; /* Centra el contenedor horizontalmente */
+    border: 3px solid #37474f; /* Agrega un borde oscuro al contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de elevación */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #263238; /* Fondo oscuro para contraste */
+    padding: 30px; /* Espaciado interno */
+    color: #ffffff; /* Texto blanco */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.sidebar img {
+    width: 120px; /* Ancho de la imagen */
+    height: 120px; /* Altura de la imagen */
+    border-radius: 10%; /* Bordes redondeados (10% de la altura/ancho) */
+    border: 3px solid #ffffff; /* Borde blanco alrededor de la imagen */
+    margin-bottom: 20px; /* Espaciado debajo de la imagen */
+}
+
+.sidebar h2 {
+    font-size: 24px; /* Tamaño grande para el nombre */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    color: #ffccbc; /* Color suave para el nombre */
+}
+
+.sidebar p {
+    font-size: 16px; /* Texto descriptivo */
+    line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Sección de contenido */
+.content {
+    padding: 25px; /* Espaciado interno */
+    background-color: #eceff1; /* Fondo claro */
+    text-align: justify; /* Justificación del texto para uniformidad */
+}
+
+.content h1 {
+    font-size: 28px; /* Tamaño destacado para títulos */
+    margin-bottom: 15px; /* Espaciado inferior */
+    color: #37474f; /* Color oscuro */
+    border-left: 5px solid #ffab91; /* Línea decorativa en el lado izquierdo */
+    padding-left: 10px; /* Espacio entre el texto y la línea decorativa */
+}
+
+.content p {
+    font-size: 14px; /* Texto estándar */
+    line-height: 1.8; /* Espaciado amplio entre líneas */
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+}
+
+.content .highlight {
+    color: #d84315; /* Texto resaltado en rojo oscuro */
+    font-weight: bold; /* Negrita */
+}
+
+/* Formulario */
+form {
+    margin-top: 20px; /* Espaciado superior */
+    display: grid; /* Diseño de rejilla para organizar elementos */
+    gap: 15px; /* Espaciado entre campos */
+    max-width: 480px; /* Ancho máximo del formulario */
+}
+
+input, textarea {
+    /* Estilo de campos de entrada y área de texto */
+    padding: 10px; /* Espaciado interno */
+    border: 2px solid #b0bec5; /* Borde gris claro */
+    border-radius: 6px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+    font-family: inherit; /* Usa la fuente general de la página */
+}
+
+button {
+    background-color: #d84315; /* Color inicial del botón */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 12px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente del texto en el botón */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 6px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave para el fondo */
+}
+
+button:hover {
+    background-color: #bf360c; /* Cambio de color al pasar el cursor */
+}
+
+/* Mensajes */
+.message {
+    font-size: 14px; /* Tamaño del mensaje */
+    display: none; /* Oculto por defecto */
+    margin-top: 10px; /* Espaciado superior */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+}
+
+.message.error {
+    background-color: #ffebee; /* Fondo rojo claro para errores */
+    color: #b71c1c; /* Texto rojo oscuro */
+}
+
+.message.success {
+    background-color: #e8f5e9; /* Fondo verde claro para mensajes exitosos */
+    color: #1b5e20; /* Texto verde oscuro */
+}
+
+.hidden {
+    display: none; /* Clase para ocultar elementos */
+}
